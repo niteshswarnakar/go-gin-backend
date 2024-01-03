@@ -8,4 +8,5 @@ import (
 func Setup(app *bootstrap.Application, r *gin.Engine) {
 	group := r.Group("/api")
 	HomeRoutes(group)
+	UserRoutes(group, app.Database, app.Env)
 }
