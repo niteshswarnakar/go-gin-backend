@@ -40,6 +40,13 @@
             </set>
           </value>
         </entry>
+        <entry key="User">
+          <value>
+            <set>
+              <option value="file://$PROJECT_DIR$/internal/domain/user.go" />
+            </set>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="scannedPathMapping">
@@ -60,6 +67,13 @@
           <value>
             <ScannedPath>
               <option name="lastModified" value="1704302520397" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/cmd/migrate/main.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1704303223242" />
             </ScannedPath>
           </value>
         </entry>
@@ -132,6 +146,25 @@
             </ScannedPath>
           </value>
         </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/base.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1704303132824" />
+            </ScannedPath>
+          </value>
+        </entry>
+        <entry key="file://$PROJECT_DIR$/internal/domain/user.go">
+          <value>
+            <ScannedPath>
+              <option name="lastModified" value="1704303175100" />
+              <option name="schema">
+                <list>
+                  <option value="User" />
+                </list>
+              </option>
+            </ScannedPath>
+          </value>
+        </entry>
         <entry key="file://$PROJECT_DIR$/main.go">
           <value>
             <ScannedPath>
@@ -153,6 +186,7 @@
         <entry key="db_conn" value="DBConn" />
         <entry key="env" value="Env" />
         <entry key="route" value="Route" />
+        <entry key="user" value="User" />
       </map>
     </option>
     <option name="lastTimeChecked" value="1704297619117" />
