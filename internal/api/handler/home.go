@@ -1,44 +1,9 @@
-package main
+package handler
 
 import (
-	"fmt"
-	"log"
-	"net/http"
-	"os"
-	"runtime"
-
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
-
-func main() {
-	// ConfigRuntime()
-	StartGin()
-}
-
-// ConfigRuntime sets the number of operating system threads.
-func ConfigRuntime() {
-	nuCPU := runtime.NumCPU()
-	runtime.GOMAXPROCS(nuCPU)
-	fmt.Printf("Running with %d CPUs\n", nuCPU)
-}
-
-// StartGin starts gin web server with setting router.
-func StartGin() {
-	gin.SetMode(gin.ReleaseMode)
-
-	router := gin.New()
-	router.GET("/", HomeView)
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "5000"
-	}
-	fmt.Println("server started at ", port)
-
-	if err := router.Run(":" + port); err != nil {
-		log.Panicf("error: %s", err)
-	}
-}
 
 type Route struct {
 	Url    string
