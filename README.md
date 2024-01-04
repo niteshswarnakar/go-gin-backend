@@ -9,3 +9,7 @@ The sample app is up at https://go-gin.onrender.com.
 ## Deployment
 
 See the guide at https://render.com/docs/deploy-go-gin.
+
+#### **Branch strategy**
+
+Always merge to dev branch from your own branch
