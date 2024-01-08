@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/render-examples/go-gin-web-server/bootstrap"
-	"github.com/render-examples/go-gin-web-server/internal/api/route"
 	"log"
 	"runtime"
+
+	"github.com/render-examples/go-gin-web-server/bootstrap"
+	"github.com/render-examples/go-gin-web-server/internal/api/route"
 
 	"github.com/gin-gonic/gin"
 )
