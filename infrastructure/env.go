@@ -1,8 +1,9 @@
 package infrastructure
 
 import (
-	"github.com/spf13/viper"
 	"log"
+
+	"github.com/spf13/viper"
 )
 
 type Env struct {
@@ -24,6 +25,7 @@ func NewEnv() Env {
 	viper.SetConfigFile(".env")
 	err := viper.ReadInConfig()
 	if err != nil {
+		log.Println("LOG: ", err)
 		log.Fatal("App configuration not found")
 	}
 	err = viper.Unmarshal(&env)
